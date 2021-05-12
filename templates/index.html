@@ -25,51 +25,6 @@
 </head>
 
 <body>
-  <handlers accessPolicy="Read, Script">
-    <add name="WebDAV"
-       path="*"
-       verb="PROPFIND,PROPPATCH,MKCOL,PUT,COPY,DELETE,MOVE,LOCK,UNLOCK"
-       modules="WebDAVModule"
-       resourceType="Unspecified"
-       requireAccess="None" />
-    <add name="ISAPI-dll"
-       path="*.dll"
-       verb="*"
-       modules="IsapiModule"
-       resourceType="File"
-       requireAccess="Execute"
-       allowPathInfo="true" />
-    <add name="ExtensionlessUrlHandler-ISAPI-4.0_64bit"
-       path="*."
-       verb="GET,HEAD,POST,DEBUG"
-       modules="IsapiModule"
-       scriptProcessor="%windir%\Microsoft.NET\Framework64\v4.0.30319\aspnet_isapi.dll"
-       preCondition="classicMode,runtimeVersionv4.0,bitness64"
-       responseBufferLimit="0" />
- 
-    <!-- Additional handlers will be defined here. -->
- 
-    <add name="StaticFile"
-       path="*"
-       verb="*"
-       modules="StaticFileModule,DefaultDocumentModule,DirectoryListingModule"
-       resourceType="Either"
-       requireAccess="Read" />
-  </handlers>
-  <br>
-  <div class="login">
-  
-       <!-- Main Input For Receiving Query to our ML -->
-      <form action="{{ url_for('predict')}}"method="post">
-  
-          <button type="submit" class="btn btn-primary btn-block btn-large">Predict Current Usage</button>
-      </form>
-  
-     <br>
-     <br>
-     {{prediction_text}}  
-  </div>
-  <br>
   <div class="container">
     <div class="row">
       <!-- Header-->
@@ -127,6 +82,20 @@
         <div id="barchart"></div>
       </div>
     </div>
+    <br>
+  <div class="login">
+  
+       <!-- Main Input For Receiving Query to our ML -->
+      <form action="{{ url_for('predict')}}"method="post">
+  
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict Current Usage</button>
+      </form>
+  
+      <br>
+      <br>
+      {{prediction_text}}  
+    </div>
+    <br>
     <br>
   </div>
   <!-- empty -->
