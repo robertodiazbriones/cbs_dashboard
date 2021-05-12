@@ -5,9 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>MI Desitrict Demo</title>
+  <title>D.C. Bikesharing Prediction Tool</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js"></script>
-
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 
   <!-- Leaflet CSS -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
@@ -22,6 +26,19 @@
 
 <body>
   <br>
+  <div class="login">
+  
+       <!-- Main Input For Receiving Query to our ML -->
+      <form action="{{ url_for('predict')}}"method="post">
+  
+          <button type="submit" class="btn btn-primary btn-block btn-large">Predict Current Usage</button>
+      </form>
+  
+     <br>
+     <br>
+     {{prediction_text}}  
+  </div>
+  <br>
   <div class="container">
     <div class="row">
       <!-- Header-->
@@ -31,6 +48,7 @@
           <h2 style="color:white;"><b>Capital Bike Sharing Washigtin DC</b></h2>
       </div>
     </div>
+  
     <div class="row" >
       <!-- Description-->
       <p align="justify">  A bicycle-sharing system, public bicycle scheme, or public bike share (PBS) scheme, is a shared
