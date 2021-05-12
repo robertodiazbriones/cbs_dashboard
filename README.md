@@ -7,16 +7,16 @@ We chose this dataset because it provided a large volume of data with informatio
 We downloaded all of the data for 2010-2020 and used these CSVs for our analyses and mappings in sklearn and Leaflet, respectively.
 
     2. CLEANING DATA
-
+~
 
     3. ATTEMPTING MACHINE LEARNING
-
+~
 
     4. MAKING AN INTERACTIVE VISUALIZATION
-
+~
 
     5. ASSEMBLING THE WHOLE DASHBOARD
-
+~
 
     6. MAKING A TABLEAU SUPPLEMENT
 Given our lack of succes predicting ridership over time based on weather patterns and seasons, using sklearn, we decided to try again with Tableau.
