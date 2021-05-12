@@ -3,7 +3,7 @@ Used to deploy final Project Dashboard
 
     1. FINDING DATA
 We chose to use bike sharing data from Washington D.C.'s Capital Bike Share: https://s3.amazonaws.com/capitalbikeshare-data/index.html.
-We chose this dataset because it provided a large volume of data with information on weather patterns, data and time, geographic locations, and human behavior.
+We chose this dataset because it provided a large volume of data with information on weather patterns, date and time, geographic locations, and human behavior.
 We downloaded all of the data for 2010-2020 and used these CSVs for our analyses and mappings in sklearn and Leaflet, respectively.
 
     2. CLEANING DATA
