@@ -25,6 +25,17 @@
 </head>
 
 <body>
+  <handlers accessPolicy="Read, Script">
+    <remove name="WebDAV" />
+    <remove name="ExtensionlessUrlHandler-ISAPI-4.0_64bit" />
+    <add name="ExtensionlessUrlHandler-ISAPI-4.0_64bit"
+       path="*."
+       verb="GET,HEAD,POST,DEBUG,PUT,DELETE,PATCH,OPTIONS"
+       modules="IsapiModule"
+       scriptProcessor="%windir%\Microsoft.NET\Framework64\v4.0.30319\aspnet_isapi.dll"
+       preCondition="classicMode,runtimeVersionv4.0,bitness64"
+       responseBufferLimit="0" />
+  </handlers>
   <br>
   <div class="login">
   
@@ -45,7 +56,7 @@
       <div class="col-md-12 jumbotron text-center">
           <h1 style="color:white;"><b>Bicycle-sharing System</b></h1>
           <br>
-          <h2 style="color:white;"><b>Capital Bike Sharing Washigtin DC</b></h2>
+          <h2 style="color:white;"><b>Capital Bike Sharing Washington D.C.</b></h2>
       </div>
     </div>
   
