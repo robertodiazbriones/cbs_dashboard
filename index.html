@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MI Desitrict Demo</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js"></script>
+  <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.3/d3.min.js"></script> -->
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin="" />
+  <!-- <style>
+    .leaflet-popup-content {
+      width: auto !important;
+    }
+  </style> -->
+  <!-- Our CSS -->
+  <link rel="stylesheet" type="text/css" href="static/css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
+</head>
+
+<body>
+  <br>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <!-- <div id="title_BCS"> -->
+          <h1 style="color:white;"><b>Bicycle-sharing System</b></h1>
+          <br>
+          <h2 style="color:white;"><b>Capital Bike Sharing Washigtin DC</b></h2>
+        <!-- </div> -->
+      </div>
+    </div>
+    <div class="row" >
+      <p align="justify">A bicycle-sharing system, public bicycle scheme, or public bike share (PBS) scheme, is a shared
+       transport service in which bicycles are made available for shared use to individuals on a short term 
+       basis for a price or free. Many bike share systems allow people to borrow a bike from a "dock" and 
+       return it at another dock belonging to the same system. Docks are special bike racks that lock the bike, 
+       and only release it by computer control. The user enters payment information, and the computer unlocks
+       a bike. The user returns the bike by placing it in the dock, which locks it in place.</p>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-md-6">
+        
+        <img src="static/css/pictures/logo.jpg" alt="bike share logo">
+        
+      </div>
+      <div class="col-md-6">
+        <p align="justify">Capital Bikeshare is a bicycle sharing system which serves Washington, 
+          D.C.; Arlington County, Virginia; the cities of Alexandria, Virginia and Falls Church, Virginia; Montgomery County,
+          Maryland and Fairfax County, Virginia. As of May 2021, it had 627 stations and 5,400+ bicycles, all owned by these
+          local governments and operated by contractor Motivate International. Opened in September 2010, the system was 
+          the largest bike sharing service in the United States until New York City's Citi Bike began operations in May 2013.</p>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-md-6">
+        <!-- The div that holds our map -->
+        <div id="map"></div>
+      </div>
+      <div class="col-md-6">
+        <div class="select_dist">
+          <select id="selDataset" onchange="optionChanged(this.value)">
+            <option value="none" selected disabled hidden>--Select a School District--</option>
+          </select>
+        </div>
+        <div id="barchart"></div>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <!-- EMpty -->
+    </div>
+  </div>
+  
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin=""></script>
+  <!-- D3 JavaScript -->
+  <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.3/d3.min.js"></script> -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js"></script>
+  <!-- API key -->
+  <script type="text/javascript" src="static/js/config.js"></script>
+  <!-- Our JavaScript -->
+  <script type="text/javascript" src="static/js/logic.js"></script>
+</body>
+
+</html>
