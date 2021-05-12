@@ -83,9 +83,8 @@
       </div>
     </div>
     <br>
-    <div class="login">
-      <h1 style="text-align:center"> Casual Usage Prediction Tool</h1>
-      <p style="text-align:center">Use this tool to estimate casual bikeshare users based on current weather conditions.</p>
+  <div class="login">
+  
        <!-- Main Input For Receiving Query to our ML -->
       <form action="{{ url_for('predict')}}"method="post">
   
@@ -98,27 +97,8 @@
     </div>
     <br>
     <br>
+  </div>
   <!-- empty -->
-  <!-- the DIV that will contain the widget -->
-	<div class="weatherForecastWidget"></div>
-
-	  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js"></script>
-	  <link rel="stylesheet" href="https://www.visualcrossing.com/widgets/forecast/weather-forecast-widget-d3.css">
-	  <script>
-		  window.weatherWidgetConfig =  window.weatherWidgetConfig || [];
-		  window.weatherWidgetConfig.push({
-			  selector:".weatherForecastWidget",
-			  apiKey:"4TL5LFAY3PFAMN97VCTQRXQHR",
-			  location:null,
-			  unitGroup:"us"
-		  });
-		  (function() {
-		  var d = document, s = d.createElement('script');
-		  s.src = 'https://www.visualcrossing.com/widgets/forecast/weather-forecast-widget-d3.js';
-		  s.setAttribute('data-timestamp', +new Date());
-		  (d.head || d.body).appendChild(s);
-		  })();
-	  </script>
   
 
   <!-- Leaflet JS -->

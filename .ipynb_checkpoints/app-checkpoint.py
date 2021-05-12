@@ -40,7 +40,7 @@ def predict():
     '''
     values = api()
     prediction = model.predict(values)[0][0]
-    return render_template('index.html', prediction_text='Based on current weather conditions, there are an estimated {} casual users.'.format(round(prediction)))
+    return render_template('index.html', prediction_text='Based on current weather conditions, there are an estimated {} bikes in use.'.format(round(prediction)))
     # return render_template('index.html', prediction_text=output)
 
 @app.route('/whatever')
