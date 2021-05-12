@@ -19,7 +19,7 @@ We downloaded all of the data for 2010-2020 and used these CSVs for our analyses
 ~
 
     6. MAKING A TABLEAU SUPPLEMENT
-Given our lack of succes predicting ridership over time based on weather patterns and seasons, using sklearn, we decided to try again with Tableau.
+Given our lack of success with using sklearn to predict ridership based on weather patterns and seasons, we decided to try again with Tableau.
 We wanted to see if we could uncover any relationship between the popularity of D.C.'s Bikeshare program and the passage of the years and the seasons.
 Using Pandas in Jupyter Notebook, we merged all the CSVs for 2011, 2012, 2013, and 2014 together into one CSV, then based a Tableau dashboard off of that dataset.
 Our first Tableau visualization is a line graph displaying the increase in the total number of unique bike stations per month in D.C. between the start of 2011 and the end of 2014.
