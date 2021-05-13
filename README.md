@@ -17,7 +17,8 @@ For this project we attempted to construct a machine learning model to predict c
 ~
 
     5. ASSEMBLING THE WHOLE DASHBOARD
-~
+Using data set from 2010-2019 bike stations to pinpoint locations on a Leaflet Map and the weather prediction is a tool that estimates casual bikeshare users based on current weather conditions. 
+Link to dashboard: https://robertodiazbriones.github.io/cbs_dashboard/templates/
 
     6. MAKING A TABLEAU SUPPLEMENT
 Given our lack of success with using sklearn to predict ridership based on weather patterns and seasons, we decided to try again with Tableau.
