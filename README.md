@@ -11,7 +11,7 @@ LINK TO OUR DATA CLEANING REPO:
 https://github.com/robertodiazbriones/FinalProject.git
 
     3. ATTEMPTING MACHINE LEARNING
-~
+For this project we attempted to construct a machine learning model to predict city bike usage based on current weather conditions. In order to do so, we built a multi-variate linear regression model and trained it with our test dataset, "merged.csv". This dataset was created by merging "hour.csv" (a D.C. bikesharing dataset from 2011 through 2012 downloaded from Kaggle) and an API response from visualcrossing.com that returned historical D.C. weather conditions for 2011 through 2012. After merging the datasets, our model was trained to predict the count of casual bikeshare users based on the current temperature, humidity, precipitation, and real feel temperature, as these variables were found to be most correlated with usage. After training our model, we found the r-squared to be ~0.30, suggesting only about 30% prediction accuracy. This could be due to various factors, including scaling issues, choice of machine learning model, and overall level of correlation between the data and variable to predict.
 
     4. MAKING AN INTERACTIVE VISUALIZATION
 ~
