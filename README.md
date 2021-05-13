@@ -7,7 +7,8 @@ We chose this dataset because it provided a large volume of data with informatio
 We downloaded all of the data for 2010-2020 and used these CSVs for our analyses and mappings in sklearn and Leaflet, respectively.
 
     2. CLEANING DATA
-~
+LINK TO OUR DATA CLEANING REPO:
+https://github.com/robertodiazbriones/FinalProject.git
 
     3. ATTEMPTING MACHINE LEARNING
 ~
